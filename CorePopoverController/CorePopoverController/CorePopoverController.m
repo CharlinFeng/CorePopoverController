@@ -45,7 +45,7 @@
 }
 
 
-+(void)showInVC:(UIViewController *)vc contentVC:(UIViewController *)contentVC targetView:(UIView *)targetView d:(WYPopoverArrowDirection)d{
++(void)showInVC:(UIViewController *)vc contentVC:(UIViewController *)contentVC target:(id)target d:(WYPopoverArrowDirection)d{
     
     WYPopoverController *ppc = [[WYPopoverController alloc] initWithContentViewController:contentVC];
     
@@ -56,7 +56,17 @@
         ppcTVC.ppc = ppc;
     }
     
-    [ppc presentPopoverFromRect:targetView.bounds inView:targetView permittedArrowDirections:d animated:YES options:WYPopoverAnimationOptionFadeWithScale completion:nil];
+    if([target isKindOfClass:[UIView class]]) {
+        UIView *view = (UIView *)target;
+       [ppc presentPopoverFromRect:view.bounds inView:view permittedArrowDirections:d animated:YES options:WYPopoverAnimationOptionFadeWithScale completion:nil];
+    }else{
+        
+        UIBarButtonItem *item = (UIBarButtonItem *)target;
+        
+        [ppc presentPopoverFromBarButtonItem:item permittedArrowDirections:d animated:YES options:WYPopoverAnimationOptionFadeWithScale completion:nil];
+    }
+    
+    
 }
 
 +(void)showInVC:(UIViewController *)vc items:(NSArray<CorePPCModel *> *)items targetView:(UIView *)targetView width:(CGFloat)width itemH:(CGFloat)itemH d:(WYPopoverArrowDirection)d SelectedItemBlock:(void (^)(NSInteger i, CorePPCModel *itemModel))SelectedItemBlock{
@@ -74,7 +84,26 @@
         if(SelectedItemBlock != nil) SelectedItemBlock(i,m);
     };
     
-    [CorePopoverController showInVC:vc contentVC:ppcTVC targetView:targetView d:d];
+    [CorePopoverController showInVC:vc contentVC:ppcTVC target:targetView d:d];
+}
+
++(void)showInVC:(UIViewController *)vc items:(NSArray<CorePPCModel *> *)items barbuttonItem:(UIBarButtonItem *)barbuttonItem width:(CGFloat)width itemH:(CGFloat)itemH d:(WYPopoverArrowDirection)d SelectedItemBlock:(void (^)(NSInteger, CorePPCModel *))SelectedItemBlock{
+    
+    CorePPCTVC *ppcTVC = [[CorePPCTVC alloc] init];
+    
+    ppcTVC.items = items;
+    
+    [ppcTVC setTotalWidth:width itemH:itemH];
+    
+    ppcTVC.SelectedItemBlock = ^(NSInteger i,CorePPCModel *m){
+        
+        [ppcTVC.ppc dismissPopoverAnimated:YES options:WYPopoverAnimationOptionFadeWithScale];
+        
+        if(SelectedItemBlock != nil) SelectedItemBlock(i,m);
+    };
+    
+    [CorePopoverController showInVC:vc contentVC:ppcTVC target:barbuttonItem d:d];
+    
 }
 
 @end

@@ -33,7 +33,7 @@
     NSArray<CorePPCModel *> *arr = @[m1,m2,m3,m4];
     
     
-    [CorePopoverController showInVC:self items:arr targetView:sender width:100 itemH:40 d:WYPopoverArrowDirectionAny SelectedItemBlock:^(NSInteger i, CorePPCModel *itemModel) {
+    [CorePopoverController showInVC:self items:arr targetView:self.navigationItem.rightBarButtonItem width:100 itemH:40 d:WYPopoverArrowDirectionAny SelectedItemBlock:^(NSInteger i, CorePPCModel *itemModel) {
         
         NSLog(@"%@,%@",@(i),itemModel.itemString);
         
