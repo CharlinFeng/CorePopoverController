@@ -10,6 +10,9 @@
 
 @interface CorePPCCell ()
 
+
+@property (weak, nonatomic) IBOutlet UIImageView *itemImgV;
+
 @property (weak, nonatomic) IBOutlet UILabel *itemLabel;
 
 @property (weak, nonatomic) IBOutlet UIView *lineView;
@@ -58,6 +61,7 @@ static const NSString *rid = @"CorePPCCell";
 
 -(void)dataFill{
     
+    _itemImgV.image = [UIImage imageNamed:_model.imgName];
     _itemLabel.text = _model.itemString;
 }
 

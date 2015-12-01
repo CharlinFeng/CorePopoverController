@@ -10,10 +10,11 @@
 
 @implementation CorePPCModel
 
-+(instancetype)modelWithItemString:(NSString *)itemString{
++(instancetype)modelWithItemImgName:(NSString *)imgName itemString:(NSString *)itemString;{
     
     CorePPCModel *model = [[CorePPCModel alloc] init];
     
+    model.imgName = imgName;
     model.itemString = itemString;
     
     return model;

@@ -10,8 +10,9 @@
 
 @interface CorePPCModel : NSObject
 
-@property (nonatomic,copy) NSString *itemString;
+@property (nonatomic,copy) NSString *imgName, *itemString;
 
-+(instancetype)modelWithItemString:(NSString *)itemString;
+
++(instancetype)modelWithItemImgName:(NSString *)imgName itemString:(NSString *)itemString;
 
 @end
