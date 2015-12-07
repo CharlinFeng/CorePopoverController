@@ -64,7 +64,7 @@ static const NSString *rid = @"CorePPCCell";
 
 -(void)dataFill{
     
-    if(_model.imgName != nil){
+    if(_model.imgName != nil && _model.imgName.length != 0){
         _itemImgV.image = [UIImage imageNamed:_model.imgName];
     }else{
         _leftMarginC.priority = 400;
