@@ -25,6 +25,7 @@ static const CGFloat footerViewH = 45;
     [super viewDidLoad];
     self.tableView.scrollEnabled=NO;
     self.tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
+    self.tableView.backgroundColor = [UIColor clearColor];
 }
 
 //-(void)viewDidAppear:(BOOL)animated{
