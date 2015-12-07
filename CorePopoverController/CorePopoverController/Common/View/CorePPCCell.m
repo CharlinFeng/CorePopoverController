@@ -19,6 +19,9 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *lineViewHC;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftMarginC;
+
+
 @end
 
 static const NSString *rid = @"CorePPCCell";
@@ -61,7 +64,12 @@ static const NSString *rid = @"CorePPCCell";
 
 -(void)dataFill{
     
-    _itemImgV.image = [UIImage imageNamed:_model.imgName];
+    if(_model.imgName != nil){
+        _itemImgV.image = [UIImage imageNamed:_model.imgName];
+    }else{
+        _leftMarginC.priority = 400;
+        _itemLabel.textAlignment = NSTextAlignmentCenter;
+    }
     _itemLabel.text = _model.itemString;
 }
 

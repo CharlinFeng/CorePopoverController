@@ -13,15 +13,15 @@
 		89B36E8C1BD48BEE00DF7D1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B36E8A1BD48BEE00DF7D1D /* Main.storyboard */; };
 		89B36E8E1BD48BEE00DF7D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B36E8D1BD48BEE00DF7D1D /* Assets.xcassets */; };
 		89B36E911BD48BEE00DF7D1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B36E8F1BD48BEE00DF7D1D /* LaunchScreen.storyboard */; };
-		89B36E9F1BD48DEC00DF7D1D /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B36E9C1BD48DEC00DF7D1D /* WYPopoverController.m */; settings = {ASSET_TAGS = (); }; };
-		89B36EA01BD48DEC00DF7D1D /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B36E9E1BD48DEC00DF7D1D /* WYStoryboardPopoverSegue.m */; settings = {ASSET_TAGS = (); }; };
-		89C27BC91BD4950200F2E9AF /* CorePopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C27BC81BD4950200F2E9AF /* CorePopoverController.m */; settings = {ASSET_TAGS = (); }; };
-		89C27BDB1BD499D600F2E9AF /* CorePPCTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C27BD51BD499D600F2E9AF /* CorePPCTVC.m */; settings = {ASSET_TAGS = (); }; };
-		89C27BDC1BD499D600F2E9AF /* CorePPCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C27BD91BD499D600F2E9AF /* CorePPCCell.m */; settings = {ASSET_TAGS = (); }; };
-		89C27BDD1BD499D600F2E9AF /* CorePPCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C27BDA1BD499D600F2E9AF /* CorePPCCell.xib */; settings = {ASSET_TAGS = (); }; };
-		89C27BE01BD49A1700F2E9AF /* CorePPCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C27BDF1BD49A1700F2E9AF /* CorePPCModel.m */; settings = {ASSET_TAGS = (); }; };
-		89C27BE31BD4A5B300F2E9AF /* CorePPCFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C27BE21BD4A5B300F2E9AF /* CorePPCFooterView.m */; settings = {ASSET_TAGS = (); }; };
-		89C27BE51BD4A5BF00F2E9AF /* CorePPCFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C27BE41BD4A5BF00F2E9AF /* CorePPCFooterView.xib */; settings = {ASSET_TAGS = (); }; };
+		89B36E9F1BD48DEC00DF7D1D /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B36E9C1BD48DEC00DF7D1D /* WYPopoverController.m */; };
+		89B36EA01BD48DEC00DF7D1D /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B36E9E1BD48DEC00DF7D1D /* WYStoryboardPopoverSegue.m */; };
+		89C27BC91BD4950200F2E9AF /* CorePopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C27BC81BD4950200F2E9AF /* CorePopoverController.m */; };
+		89C27BDB1BD499D600F2E9AF /* CorePPCTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C27BD51BD499D600F2E9AF /* CorePPCTVC.m */; };
+		89C27BDC1BD499D600F2E9AF /* CorePPCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C27BD91BD499D600F2E9AF /* CorePPCCell.m */; };
+		89C27BDD1BD499D600F2E9AF /* CorePPCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C27BDA1BD499D600F2E9AF /* CorePPCCell.xib */; };
+		89C27BE01BD49A1700F2E9AF /* CorePPCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C27BDF1BD49A1700F2E9AF /* CorePPCModel.m */; };
+		89C27BE31BD4A5B300F2E9AF /* CorePPCFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C27BE21BD4A5B300F2E9AF /* CorePPCFooterView.m */; };
+		89C27BE51BD4A5BF00F2E9AF /* CorePPCFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C27BE41BD4A5BF00F2E9AF /* CorePPCFooterView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -368,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CorePopoverController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.Charlin.CorePopoverController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CorePopoverController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.Charlin.CorePopoverController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
