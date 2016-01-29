@@ -25,7 +25,6 @@ static const CGFloat footerViewH = 45;
     [super viewDidLoad];
     self.tableView.scrollEnabled=NO;
     self.tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
-    self.tableView.backgroundColor = [UIColor clearColor];
 }
 
 //-(void)viewDidAppear:(BOOL)animated{
@@ -98,7 +97,9 @@ static const CGFloat footerViewH = 45;
     
     if(self.SelectedItemBlock == nil) return;
     
-    self.SelectedItemBlock(indexPath.row,self.items[indexPath.row]);
+    CorePPCModel *ppcModel = self.items[indexPath.row];
+    
+    self.SelectedItemBlock(indexPath.row,ppcModel,ppcModel.appModel);
 }
 
 -(void)viewDidLayoutSubviews

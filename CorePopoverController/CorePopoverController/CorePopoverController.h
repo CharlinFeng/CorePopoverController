@@ -14,10 +14,10 @@
 @interface CorePopoverController : NSObject
 
 
-+(void)showInVC:(UIViewController *)vc items:(NSArray<CorePPCModel *> *)items targetView:(UIView *)targetView width:(CGFloat)width itemH:(CGFloat)itemH d:(WYPopoverArrowDirection)d SelectedItemBlock:(void (^)(NSInteger i, CorePPCModel *itemModel))SelectedItemBlock;
++(void)showInVC:(UIViewController *)vc items:(NSArray<CorePPCModel *> *)items targetView:(UIView *)targetView width:(CGFloat)width itemH:(CGFloat)itemH d:(WYPopoverArrowDirection)d SelectedItemBlock:(void (^)(NSInteger i, CorePPCModel *ppcModel, NSObject *appModel))SelectedItemBlock;
 
 
-+(void)showInVC:(UIViewController *)vc items:(NSArray<CorePPCModel *> *)items barbuttonItem:(UIBarButtonItem *)barbuttonItem width:(CGFloat)width itemH:(CGFloat)itemH d:(WYPopoverArrowDirection)d SelectedItemBlock:(void (^)(NSInteger, CorePPCModel *))SelectedItemBlock;
++(void)showInVC:(UIViewController *)vc items:(NSArray<CorePPCModel *> *)items barbuttonItem:(UIBarButtonItem *)barbuttonItem width:(CGFloat)width itemH:(CGFloat)itemH d:(WYPopoverArrowDirection)d SelectedItemBlock:(void (^)(NSInteger i, CorePPCModel *ppcModel, NSObject *appModel))SelectedItemBlock;
 
 
 @end

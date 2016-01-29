@@ -16,7 +16,7 @@
 
 @property (nonatomic,weak) WYPopoverController *ppc;
 
-@property (nonatomic,copy) void (^SelectedItemBlock)(NSInteger i,CorePPCModel *model);
+@property (nonatomic,copy) void (^SelectedItemBlock)(NSInteger i,CorePPCModel *model,NSObject *appModel);
 
 -(void)setTotalWidth:(CGFloat)width itemH:(CGFloat)itemH;
 

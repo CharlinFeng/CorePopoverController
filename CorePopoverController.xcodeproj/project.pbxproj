@@ -7,24 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89AAF5621C5BD1C8002AD421 /* CorePPCTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF54F1C5BD1C8002AD421 /* CorePPCTVC.m */; };
+		89AAF5631C5BD1C8002AD421 /* CorePPCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF5521C5BD1C8002AD421 /* CorePPCModel.m */; };
+		89AAF5641C5BD1C8002AD421 /* CorePPCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF5551C5BD1C8002AD421 /* CorePPCCell.m */; };
+		89AAF5651C5BD1C8002AD421 /* CorePPCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89AAF5561C5BD1C8002AD421 /* CorePPCCell.xib */; };
+		89AAF5661C5BD1C8002AD421 /* CorePPCFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF5581C5BD1C8002AD421 /* CorePPCFooterView.m */; };
+		89AAF5671C5BD1C8002AD421 /* CorePPCFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89AAF5591C5BD1C8002AD421 /* CorePPCFooterView.xib */; };
+		89AAF5681C5BD1C8002AD421 /* CorePopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF55B1C5BD1C8002AD421 /* CorePopoverController.m */; };
+		89AAF5691C5BD1C8002AD421 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF55F1C5BD1C8002AD421 /* WYPopoverController.m */; };
+		89AAF56A1C5BD1C8002AD421 /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF5611C5BD1C8002AD421 /* WYStoryboardPopoverSegue.m */; };
 		89B36E831BD48BEE00DF7D1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B36E821BD48BEE00DF7D1D /* main.m */; };
 		89B36E861BD48BEE00DF7D1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B36E851BD48BEE00DF7D1D /* AppDelegate.m */; };
 		89B36E891BD48BEE00DF7D1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B36E881BD48BEE00DF7D1D /* ViewController.m */; };
 		89B36E8C1BD48BEE00DF7D1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B36E8A1BD48BEE00DF7D1D /* Main.storyboard */; };
 		89B36E8E1BD48BEE00DF7D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B36E8D1BD48BEE00DF7D1D /* Assets.xcassets */; };
 		89B36E911BD48BEE00DF7D1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B36E8F1BD48BEE00DF7D1D /* LaunchScreen.storyboard */; };
-		89B36E9F1BD48DEC00DF7D1D /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B36E9C1BD48DEC00DF7D1D /* WYPopoverController.m */; };
-		89B36EA01BD48DEC00DF7D1D /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B36E9E1BD48DEC00DF7D1D /* WYStoryboardPopoverSegue.m */; };
-		89C27BC91BD4950200F2E9AF /* CorePopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C27BC81BD4950200F2E9AF /* CorePopoverController.m */; };
-		89C27BDB1BD499D600F2E9AF /* CorePPCTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C27BD51BD499D600F2E9AF /* CorePPCTVC.m */; };
-		89C27BDC1BD499D600F2E9AF /* CorePPCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C27BD91BD499D600F2E9AF /* CorePPCCell.m */; };
-		89C27BDD1BD499D600F2E9AF /* CorePPCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C27BDA1BD499D600F2E9AF /* CorePPCCell.xib */; };
-		89C27BE01BD49A1700F2E9AF /* CorePPCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C27BDF1BD49A1700F2E9AF /* CorePPCModel.m */; };
-		89C27BE31BD4A5B300F2E9AF /* CorePPCFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C27BE21BD4A5B300F2E9AF /* CorePPCFooterView.m */; };
-		89C27BE51BD4A5BF00F2E9AF /* CorePPCFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C27BE41BD4A5BF00F2E9AF /* CorePPCFooterView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89AAF54E1C5BD1C8002AD421 /* CorePPCTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorePPCTVC.h; sourceTree = "<group>"; };
+		89AAF54F1C5BD1C8002AD421 /* CorePPCTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorePPCTVC.m; sourceTree = "<group>"; };
+		89AAF5511C5BD1C8002AD421 /* CorePPCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorePPCModel.h; sourceTree = "<group>"; };
+		89AAF5521C5BD1C8002AD421 /* CorePPCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorePPCModel.m; sourceTree = "<group>"; };
+		89AAF5541C5BD1C8002AD421 /* CorePPCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorePPCCell.h; sourceTree = "<group>"; };
+		89AAF5551C5BD1C8002AD421 /* CorePPCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorePPCCell.m; sourceTree = "<group>"; };
+		89AAF5561C5BD1C8002AD421 /* CorePPCCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CorePPCCell.xib; sourceTree = "<group>"; };
+		89AAF5571C5BD1C8002AD421 /* CorePPCFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorePPCFooterView.h; sourceTree = "<group>"; };
+		89AAF5581C5BD1C8002AD421 /* CorePPCFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorePPCFooterView.m; sourceTree = "<group>"; };
+		89AAF5591C5BD1C8002AD421 /* CorePPCFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CorePPCFooterView.xib; sourceTree = "<group>"; };
+		89AAF55A1C5BD1C8002AD421 /* CorePopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorePopoverController.h; sourceTree = "<group>"; };
+		89AAF55B1C5BD1C8002AD421 /* CorePopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorePopoverController.m; sourceTree = "<group>"; };
+		89AAF55E1C5BD1C8002AD421 /* WYPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPopoverController.h; sourceTree = "<group>"; };
+		89AAF55F1C5BD1C8002AD421 /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
+		89AAF5601C5BD1C8002AD421 /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
+		89AAF5611C5BD1C8002AD421 /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
 		89B36E7E1BD48BEE00DF7D1D /* CorePopoverController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CorePopoverController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B36E821BD48BEE00DF7D1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89B36E841BD48BEE00DF7D1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,22 +51,6 @@
 		89B36E8D1BD48BEE00DF7D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89B36E901BD48BEE00DF7D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89B36E921BD48BEE00DF7D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89B36E9B1BD48DEC00DF7D1D /* WYPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPopoverController.h; sourceTree = "<group>"; };
-		89B36E9C1BD48DEC00DF7D1D /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
-		89B36E9D1BD48DEC00DF7D1D /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
-		89B36E9E1BD48DEC00DF7D1D /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
-		89C27BC71BD4950200F2E9AF /* CorePopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorePopoverController.h; sourceTree = "<group>"; };
-		89C27BC81BD4950200F2E9AF /* CorePopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorePopoverController.m; sourceTree = "<group>"; };
-		89C27BD41BD499D600F2E9AF /* CorePPCTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorePPCTVC.h; sourceTree = "<group>"; };
-		89C27BD51BD499D600F2E9AF /* CorePPCTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorePPCTVC.m; sourceTree = "<group>"; };
-		89C27BD81BD499D600F2E9AF /* CorePPCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorePPCCell.h; sourceTree = "<group>"; };
-		89C27BD91BD499D600F2E9AF /* CorePPCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorePPCCell.m; sourceTree = "<group>"; };
-		89C27BDA1BD499D600F2E9AF /* CorePPCCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CorePPCCell.xib; sourceTree = "<group>"; };
-		89C27BDE1BD49A1700F2E9AF /* CorePPCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorePPCModel.h; sourceTree = "<group>"; };
-		89C27BDF1BD49A1700F2E9AF /* CorePPCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorePPCModel.m; sourceTree = "<group>"; };
-		89C27BE11BD4A5B300F2E9AF /* CorePPCFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorePPCFooterView.h; sourceTree = "<group>"; };
-		89C27BE21BD4A5B300F2E9AF /* CorePPCFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorePPCFooterView.m; sourceTree = "<group>"; };
-		89C27BE41BD4A5BF00F2E9AF /* CorePPCFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CorePPCFooterView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +64,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89AAF54B1C5BD1C8002AD421 /* CorePopoverController */ = {
+			isa = PBXGroup;
+			children = (
+				89AAF54C1C5BD1C8002AD421 /* Common */,
+				89AAF55A1C5BD1C8002AD421 /* CorePopoverController.h */,
+				89AAF55B1C5BD1C8002AD421 /* CorePopoverController.m */,
+				89AAF55C1C5BD1C8002AD421 /* Lib */,
+			);
+			path = CorePopoverController;
+			sourceTree = "<group>";
+		};
+		89AAF54C1C5BD1C8002AD421 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				89AAF54D1C5BD1C8002AD421 /* Controller */,
+				89AAF5501C5BD1C8002AD421 /* Model */,
+				89AAF5531C5BD1C8002AD421 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		89AAF54D1C5BD1C8002AD421 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				89AAF54E1C5BD1C8002AD421 /* CorePPCTVC.h */,
+				89AAF54F1C5BD1C8002AD421 /* CorePPCTVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		89AAF5501C5BD1C8002AD421 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89AAF5511C5BD1C8002AD421 /* CorePPCModel.h */,
+				89AAF5521C5BD1C8002AD421 /* CorePPCModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		89AAF5531C5BD1C8002AD421 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89AAF5541C5BD1C8002AD421 /* CorePPCCell.h */,
+				89AAF5551C5BD1C8002AD421 /* CorePPCCell.m */,
+				89AAF5561C5BD1C8002AD421 /* CorePPCCell.xib */,
+				89AAF5571C5BD1C8002AD421 /* CorePPCFooterView.h */,
+				89AAF5581C5BD1C8002AD421 /* CorePPCFooterView.m */,
+				89AAF5591C5BD1C8002AD421 /* CorePPCFooterView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89AAF55C1C5BD1C8002AD421 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				89AAF55D1C5BD1C8002AD421 /* WYPopoverController */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		89AAF55D1C5BD1C8002AD421 /* WYPopoverController */ = {
+			isa = PBXGroup;
+			children = (
+				89AAF55E1C5BD1C8002AD421 /* WYPopoverController.h */,
+				89AAF55F1C5BD1C8002AD421 /* WYPopoverController.m */,
+				89AAF5601C5BD1C8002AD421 /* WYStoryboardPopoverSegue.h */,
+				89AAF5611C5BD1C8002AD421 /* WYStoryboardPopoverSegue.m */,
+			);
+			path = WYPopoverController;
+			sourceTree = "<group>";
+		};
 		89B36E751BD48BEE00DF7D1D = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +154,7 @@
 		89B36E801BD48BEE00DF7D1D /* CorePopoverController */ = {
 			isa = PBXGroup;
 			children = (
-				89B36E981BD48DEC00DF7D1D /* CorePopoverController */,
+				89AAF54B1C5BD1C8002AD421 /* CorePopoverController */,
 				89B36E841BD48BEE00DF7D1D /* AppDelegate.h */,
 				89B36E851BD48BEE00DF7D1D /* AppDelegate.m */,
 				89B36E871BD48BEE00DF7D1D /* ViewController.h */,
@@ -103,77 +174,6 @@
 				89B36E821BD48BEE00DF7D1D /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		89B36E981BD48DEC00DF7D1D /* CorePopoverController */ = {
-			isa = PBXGroup;
-			children = (
-				89C27BCA1BD4983800F2E9AF /* Common */,
-				89B36E991BD48DEC00DF7D1D /* Lib */,
-				89C27BC71BD4950200F2E9AF /* CorePopoverController.h */,
-				89C27BC81BD4950200F2E9AF /* CorePopoverController.m */,
-			);
-			path = CorePopoverController;
-			sourceTree = "<group>";
-		};
-		89B36E991BD48DEC00DF7D1D /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				89B36E9A1BD48DEC00DF7D1D /* WYPopoverController */,
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
-		89B36E9A1BD48DEC00DF7D1D /* WYPopoverController */ = {
-			isa = PBXGroup;
-			children = (
-				89B36E9B1BD48DEC00DF7D1D /* WYPopoverController.h */,
-				89B36E9C1BD48DEC00DF7D1D /* WYPopoverController.m */,
-				89B36E9D1BD48DEC00DF7D1D /* WYStoryboardPopoverSegue.h */,
-				89B36E9E1BD48DEC00DF7D1D /* WYStoryboardPopoverSegue.m */,
-			);
-			path = WYPopoverController;
-			sourceTree = "<group>";
-		};
-		89C27BCA1BD4983800F2E9AF /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				89C27BD31BD499D600F2E9AF /* Controller */,
-				89C27BD61BD499D600F2E9AF /* Model */,
-				89C27BD71BD499D600F2E9AF /* View */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		89C27BD31BD499D600F2E9AF /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				89C27BD41BD499D600F2E9AF /* CorePPCTVC.h */,
-				89C27BD51BD499D600F2E9AF /* CorePPCTVC.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		89C27BD61BD499D600F2E9AF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				89C27BDE1BD49A1700F2E9AF /* CorePPCModel.h */,
-				89C27BDF1BD49A1700F2E9AF /* CorePPCModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		89C27BD71BD499D600F2E9AF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				89C27BD81BD499D600F2E9AF /* CorePPCCell.h */,
-				89C27BD91BD499D600F2E9AF /* CorePPCCell.m */,
-				89C27BDA1BD499D600F2E9AF /* CorePPCCell.xib */,
-				89C27BE11BD4A5B300F2E9AF /* CorePPCFooterView.h */,
-				89C27BE21BD4A5B300F2E9AF /* CorePPCFooterView.m */,
-				89C27BE41BD4A5BF00F2E9AF /* CorePPCFooterView.xib */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,10 +233,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89C27BDD1BD499D600F2E9AF /* CorePPCCell.xib in Resources */,
+				89AAF5671C5BD1C8002AD421 /* CorePPCFooterView.xib in Resources */,
+				89AAF5651C5BD1C8002AD421 /* CorePPCCell.xib in Resources */,
 				89B36E911BD48BEE00DF7D1D /* LaunchScreen.storyboard in Resources */,
 				89B36E8E1BD48BEE00DF7D1D /* Assets.xcassets in Resources */,
-				89C27BE51BD4A5BF00F2E9AF /* CorePPCFooterView.xib in Resources */,
 				89B36E8C1BD48BEE00DF7D1D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,16 +248,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89C27BDB1BD499D600F2E9AF /* CorePPCTVC.m in Sources */,
-				89C27BE01BD49A1700F2E9AF /* CorePPCModel.m in Sources */,
+				89AAF5691C5BD1C8002AD421 /* WYPopoverController.m in Sources */,
+				89AAF5641C5BD1C8002AD421 /* CorePPCCell.m in Sources */,
+				89AAF5661C5BD1C8002AD421 /* CorePPCFooterView.m in Sources */,
+				89AAF5681C5BD1C8002AD421 /* CorePopoverController.m in Sources */,
+				89AAF56A1C5BD1C8002AD421 /* WYStoryboardPopoverSegue.m in Sources */,
+				89AAF5621C5BD1C8002AD421 /* CorePPCTVC.m in Sources */,
 				89B36E891BD48BEE00DF7D1D /* ViewController.m in Sources */,
+				89AAF5631C5BD1C8002AD421 /* CorePPCModel.m in Sources */,
 				89B36E861BD48BEE00DF7D1D /* AppDelegate.m in Sources */,
-				89C27BC91BD4950200F2E9AF /* CorePopoverController.m in Sources */,
-				89C27BE31BD4A5B300F2E9AF /* CorePPCFooterView.m in Sources */,
-				89C27BDC1BD499D600F2E9AF /* CorePPCCell.m in Sources */,
 				89B36E831BD48BEE00DF7D1D /* main.m in Sources */,
-				89B36E9F1BD48DEC00DF7D1D /* WYPopoverController.m in Sources */,
-				89B36EA01BD48DEC00DF7D1D /* WYStoryboardPopoverSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

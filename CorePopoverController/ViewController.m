@@ -23,19 +23,19 @@
 
 - (IBAction)clickBtn:(UIButton *)sender {
     
-    CorePPCModel *m1= [CorePPCModel modelWithItemImgName:nil itemString:@"成都"];
-    CorePPCModel *m2= [CorePPCModel modelWithItemImgName:nil itemString:@"北京"];
-    CorePPCModel *m3= [CorePPCModel modelWithItemImgName:nil itemString:@"上海"];
-    CorePPCModel *m4= [CorePPCModel modelWithItemImgName:nil itemString:@"广州"];
+    CorePPCModel *m1= [CorePPCModel modelWithItemImgName:nil itemString:@"成都" appModel:@"m0"];
+    CorePPCModel *m2= [CorePPCModel modelWithItemImgName:nil itemString:@"北京" appModel:@"m1"];
+    CorePPCModel *m3= [CorePPCModel modelWithItemImgName:nil itemString:@"上海" appModel:@"m2"];
+    CorePPCModel *m4= [CorePPCModel modelWithItemImgName:nil itemString:@"广州" appModel:@"m3"];
     
     
 
     NSArray<CorePPCModel *> *arr = @[m1,m2,m3,m4];
     
     
-    [CorePopoverController showInVC:self items:arr targetView:self.navigationItem.rightBarButtonItem width:100 itemH:40 d:WYPopoverArrowDirectionAny SelectedItemBlock:^(NSInteger i, CorePPCModel *itemModel) {
+    [CorePopoverController showInVC:self items:arr targetView:self.navigationItem.rightBarButtonItem width:100 itemH:40 d:WYPopoverArrowDirectionAny SelectedItemBlock:^(NSInteger i, CorePPCModel *itemModel, NSObject *appModel) {
         
-        NSLog(@"%@,%@",@(i),itemModel.itemString);
+        NSLog(@"%@,%@,%@",@(i),itemModel.itemString,appModel);
         
     }];
     

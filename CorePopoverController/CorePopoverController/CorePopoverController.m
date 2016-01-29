@@ -69,7 +69,7 @@
     
 }
 
-+(void)showInVC:(UIViewController *)vc items:(NSArray<CorePPCModel *> *)items targetView:(UIView *)targetView width:(CGFloat)width itemH:(CGFloat)itemH d:(WYPopoverArrowDirection)d SelectedItemBlock:(void (^)(NSInteger i, CorePPCModel *itemModel))SelectedItemBlock{
++(void)showInVC:(UIViewController *)vc items:(NSArray<CorePPCModel *> *)items targetView:(UIView *)targetView width:(CGFloat)width itemH:(CGFloat)itemH d:(WYPopoverArrowDirection)d SelectedItemBlock:(void (^)(NSInteger i, CorePPCModel *ppcModel, NSObject *appModel))SelectedItemBlock{
     
     CorePPCTVC *ppcTVC = [[CorePPCTVC alloc] init];
     
@@ -77,17 +77,17 @@
     
     [ppcTVC setTotalWidth:width itemH:itemH];
     
-    ppcTVC.SelectedItemBlock = ^(NSInteger i,CorePPCModel *m){
+    ppcTVC.SelectedItemBlock = ^(NSInteger i,CorePPCModel *m, NSObject *appModel){
     
         [ppcTVC.ppc dismissPopoverAnimated:YES options:WYPopoverAnimationOptionFadeWithScale];
         
-        if(SelectedItemBlock != nil) SelectedItemBlock(i,m);
+        if(SelectedItemBlock != nil) SelectedItemBlock(i,m,appModel);
     };
     
     [CorePopoverController showInVC:vc contentVC:ppcTVC target:targetView d:d];
 }
 
-+(void)showInVC:(UIViewController *)vc items:(NSArray<CorePPCModel *> *)items barbuttonItem:(UIBarButtonItem *)barbuttonItem width:(CGFloat)width itemH:(CGFloat)itemH d:(WYPopoverArrowDirection)d SelectedItemBlock:(void (^)(NSInteger, CorePPCModel *))SelectedItemBlock{
++(void)showInVC:(UIViewController *)vc items:(NSArray<CorePPCModel *> *)items barbuttonItem:(UIBarButtonItem *)barbuttonItem width:(CGFloat)width itemH:(CGFloat)itemH d:(WYPopoverArrowDirection)d SelectedItemBlock:(void (^)(NSInteger i, CorePPCModel *ppcModel, NSObject *appModel))SelectedItemBlock{
     
     CorePPCTVC *ppcTVC = [[CorePPCTVC alloc] init];
     
@@ -95,11 +95,11 @@
     
     [ppcTVC setTotalWidth:width itemH:itemH];
     
-    ppcTVC.SelectedItemBlock = ^(NSInteger i,CorePPCModel *m){
+    ppcTVC.SelectedItemBlock = ^(NSInteger i,CorePPCModel *m, NSObject *appModel){
         
         [ppcTVC.ppc dismissPopoverAnimated:YES options:WYPopoverAnimationOptionFadeWithScale];
         
-        if(SelectedItemBlock != nil) SelectedItemBlock(i,m);
+        if(SelectedItemBlock != nil) SelectedItemBlock(i,m,appModel);
     };
     
     [CorePopoverController showInVC:vc contentVC:ppcTVC target:barbuttonItem d:d];
