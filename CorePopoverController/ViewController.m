@@ -29,11 +29,10 @@
     CorePPCModel *m4= [CorePPCModel modelWithItemImgName:nil itemString:@"广州" appModel:@"m3"];
     
     
-
     NSArray<CorePPCModel *> *arr = @[m1,m2,m3,m4];
     
     
-    [CorePopoverController showInVC:self items:arr targetView:self.navigationItem.rightBarButtonItem width:100 itemH:40 d:WYPopoverArrowDirectionAny SelectedItemBlock:^(NSInteger i, CorePPCModel *itemModel, NSObject *appModel) {
+    [CorePopoverController showInVC:self items:arr targetView:self.navigationItem.rightBarButtonItem selectedIndex:1 width:100 itemH:40 d:WYPopoverArrowDirectionAny SelectedItemBlock:^(NSInteger i, CorePPCModel *itemModel, NSObject *appModel) {
         
         NSLog(@"%@,%@,%@",@(i),itemModel.itemString,appModel);
         

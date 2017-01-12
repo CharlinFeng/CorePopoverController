@@ -18,6 +18,8 @@
 
 @property (nonatomic,copy) void (^SelectedItemBlock)(NSInteger i,CorePPCModel *model,NSObject *appModel);
 
+@property (nonatomic,assign) NSInteger selectedIndex;
+
 -(void)setTotalWidth:(CGFloat)width itemH:(CGFloat)itemH;
 
 

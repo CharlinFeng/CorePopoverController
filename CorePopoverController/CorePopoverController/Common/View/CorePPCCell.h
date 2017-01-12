@@ -16,6 +16,8 @@
 @property (nonatomic,assign) BOOL hideLine;
 
 
+@property (weak, nonatomic) IBOutlet UILabel *itemLabel;
+
 +(instancetype)dequeCell:(UITableView *)tableView;
 
 

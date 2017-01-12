@@ -69,10 +69,10 @@
     
 }
 
-+(void)showInVC:(UIViewController *)vc items:(NSArray<CorePPCModel *> *)items targetView:(UIView *)targetView width:(CGFloat)width itemH:(CGFloat)itemH d:(WYPopoverArrowDirection)d SelectedItemBlock:(void (^)(NSInteger i, CorePPCModel *ppcModel, NSObject *appModel))SelectedItemBlock{
++(void)showInVC:(UIViewController *)vc items:(NSArray<CorePPCModel *> *)items targetView:(UIView *)targetView selectedIndex:(NSInteger)selectedIndex width:(CGFloat)width itemH:(CGFloat)itemH d:(WYPopoverArrowDirection)d SelectedItemBlock:(void (^)(NSInteger i, CorePPCModel *ppcModel, NSObject *appModel))SelectedItemBlock{
     
     CorePPCTVC *ppcTVC = [[CorePPCTVC alloc] init];
-    
+    ppcTVC.selectedIndex = selectedIndex;
     ppcTVC.items = items;
     
     [ppcTVC setTotalWidth:width itemH:itemH];
@@ -87,10 +87,10 @@
     [CorePopoverController showInVC:vc contentVC:ppcTVC target:targetView d:d];
 }
 
-+(void)showInVC:(UIViewController *)vc items:(NSArray<CorePPCModel *> *)items barbuttonItem:(UIBarButtonItem *)barbuttonItem width:(CGFloat)width itemH:(CGFloat)itemH d:(WYPopoverArrowDirection)d SelectedItemBlock:(void (^)(NSInteger i, CorePPCModel *ppcModel, NSObject *appModel))SelectedItemBlock{
++(void)showInVC:(UIViewController *)vc items:(NSArray<CorePPCModel *> *)items barbuttonItem:(UIBarButtonItem *)barbuttonItem selectedIndex:(NSInteger)selectedIndex width:(CGFloat)width itemH:(CGFloat)itemH d:(WYPopoverArrowDirection)d SelectedItemBlock:(void (^)(NSInteger i, CorePPCModel *ppcModel, NSObject *appModel))SelectedItemBlock{
     
     CorePPCTVC *ppcTVC = [[CorePPCTVC alloc] init];
-    
+    ppcTVC.selectedIndex = selectedIndex;
     ppcTVC.items = items;
     
     [ppcTVC setTotalWidth:width itemH:itemH];

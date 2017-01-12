@@ -83,6 +83,11 @@ static const CGFloat footerViewH = 45;
     
     cell.model=self.items[indexPath.row];
     
+    if (self.selectedIndex >= 0 && self.selectedIndex == indexPath.row) {
+    
+        cell.itemLabel.textColor = [UIColor redColor];
+    }
+    
     cell.hideLine = indexPath.row == self.items.count - 1;
     
     return cell;
